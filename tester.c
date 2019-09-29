@@ -12,7 +12,7 @@ long main() {
   	scanf("%s", fname);
   	long out = syscall(355, pid, fname);
   	if (out != 0) {
-    	printf("Error\n");
+    		printf("Error\n");
    	}
    	perror("err");
    	printf("\nerrno: %d\n", errno);
